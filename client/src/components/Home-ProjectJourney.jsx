@@ -1,7 +1,7 @@
 import React from "react";
-import idea from "./images/idea.svg"
-import discuss from "./images/discuss.svg"
-import team from "./images/team.svg"
+import idea from "./images/idea.png"
+import discuss from "./images/discuss.png"
+import team from "./images/team.png"
 import a1 from "./images/1.svg";
 import a2 from "./images/2.svg";
 const HomeProjectJourney = () => {
@@ -118,6 +118,7 @@ const HomeProjectJourney = () => {
                              alt="Feedback"
                              className="listar-image-icon"
                              src={team}
+                             width={50}
                            />
                          </div>
                        </div>

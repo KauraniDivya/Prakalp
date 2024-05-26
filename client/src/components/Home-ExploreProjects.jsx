@@ -5,7 +5,7 @@ import { UserContext } from '../App';
 import tech from "./images/tech-category.svg";
 import nontech from "./images/non-tech.svg";
 
-import element from "./images/element.svg";
+import element from "./images/element.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 const HomeExploreProject = () => {

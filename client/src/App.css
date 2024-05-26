@@ -328,7 +328,7 @@ nav ul li a:hover {
 
 .progress-bar {
   height: 4px;
-  background-color: orangered;
+  background-color:rgb(0 92 184);
   /* Adjust color as needed */
   position: absolute;
   bottom: 0;
@@ -353,7 +353,7 @@ nav ul li a {
 
 .fa-arrow-right {
   margin-left: 10px;
-  color: #ec7219;
+  color: blue;
 }
 
 .login-btn:hover {
@@ -374,7 +374,7 @@ nav ul li ul {
   background-color: var(--white);
   border-radius: 2px;
   margin-left: 0px;
-  background-color: #fff8ed;
+  background-color: aliceblue;
   z-index: 1000;
 
   /* border-radius: 20PX; */
@@ -535,7 +535,7 @@ form {
   background: transparent;
   /* border: rgba(255, 166, 0, 0.5) solid 3px; */
   border-radius: 20px;
-  /* box-shadow: 0 0 3px #fff8ed; */
+  /* box-shadow: 0 0 3px aliceblue; */
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
   width: 700px;
@@ -914,12 +914,12 @@ input.button
   cursor: pointer;
   border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  color: orangered;
+  color:rgb(0 92 184);
   text-decoration: none;
   position: relative;
   top: 0;
   transition: 0.2s ease;
-  border: 1px solid orangered;
+  border: 1px solidrgb(0 92 184);
 }
 
 a.button:hover,
@@ -929,7 +929,7 @@ button.hover {
   transform: translate(0px, 0px);
   background: linear-gradient(rgb(239, 69, 89) 0px, rgb(238, 112, 44) 100%);
   ;
-  color: #fff8ed;
+  color: aliceblue;
 }
 
 a.button:active,
@@ -1051,8 +1051,8 @@ button.accent3.active {
 }
 
 .pagination button {
-  background-color: orangered;
-  color: #fff8ed;
+  background-color:rgb(0 92 184);
+  color: aliceblue;
   border: none;
   padding: 16px 56px;
   margin: 0 27px;
@@ -1070,7 +1070,7 @@ button.accent3.active {
 
 .pagination button:hover {
   background-color: #f8c488;
-  color: orangered;
+  color:rgb(0 92 184);
 }
 
 .pagination button:disabled {
@@ -1152,7 +1152,7 @@ button.accent3.active {
   /* margin-left: 50px; */
   margin: auto;
   background-color: #fbeacd;
-  color: orangered;
+  color:rgb(0 92 184);
   margin-right: 9px;
 }
 
@@ -1474,7 +1474,7 @@ a:focus {
   /* Adjust alignment as needed */
   gap: 20px;
   /* Adjust the gap between sections as needed */
-  background-color: #fff8ed;
+  background-color: aliceblue;
   padding-left: 0px;
   max-width: 1500px;
   margin-top: -1rem;
@@ -1484,7 +1484,7 @@ a:focus {
 /* FILTERS */
 .filter-container {
   background-color: white;
-  /* border-right: 1px solid orangered; */
+  /* border-right: 1px solidrgb(0 92 184); */
   border-radius: 0rem 2rem 2rem 0rem;
   /* box-shadow: rgb(0, 30, 74) 0px 0px 23px; */
   box-shadow: 8px 6px 18px 5px rgba(246, 204, 78, 0.386);
@@ -1709,7 +1709,7 @@ a:focus {
 .categories {
   padding-top: 20px;
   color: white;
-  background: linear-gradient(rgb(239, 69, 89) 0px, rgb(238, 112, 44) 100%);
+  background: linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%);
   /* background-color: rgba(2, 28, 67, 0.616); */
   backdrop-filter: blur(12px);
   position: relative;
@@ -1797,9 +1797,9 @@ a:focus {
 
 .course-amount {
   text-decoration: none;
-  color: #ec7219;
+  color: blue;
   margin-left: 9px;
-
+  font-weight: 500;
 }
 
 a {
@@ -1873,7 +1873,7 @@ a {
     color: rgb(0, 30, 74);} */
 .selected-item {
   /* background-color: white; */
-  color: orangered;
+  color:rgb(0 92 184);
 }
 
 .item-content img {
@@ -2369,7 +2369,7 @@ watch-video .video-container {
 
 .header-design {
   background-color: #a4508b;
-  background-image: linear-gradient(326deg, #a4508b 0%, rgb(238, 112, 44) 74%);
+  background-image: linear-gradient(326deg, #62abc7 0%, rgb(4, 22, 93) 74%);
   height: 120px;
   text-align: center;
 }
@@ -2784,7 +2784,7 @@ watch-video .video-container {
 }
 
 .listar-map-button-text span {
-  background-color: #ff4500;
+  background-color: #045ea7;
   color: white;
   text-shadow: none;
   -webkit-transition: all 0.2s ease-in;
@@ -3444,7 +3444,7 @@ select::-ms-expand {
   height: auto;
   /* margin-top: 8px; */
   backdrop-filter: blur(22px);
-  background-color: #fff8ed;
+  background-color: aliceblue;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(13rem);
   background-repeat: no-repeat;
@@ -3832,7 +3832,7 @@ form .btn input[type="submit"] {
   margin-left: 0rem;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  border-right: 1px solid orange;
+  border-right: 1px solid blue;
   /* Add border on the right */
 
 }
@@ -4116,7 +4116,7 @@ form .btn input[type="submit"] {
 .sidebar-category {
   padding: 20px;
   margin-bottom: 30px;
-  border: 1px solid #fff8ed;
+  border: 1px solid aliceblue;
   -webkit-border-radius: var(--border-radius-md);
   border-radius: var(--border-radius-md);
 }
@@ -4596,7 +4596,7 @@ button {
 .btn.btn-primary:hover {
   background-color: rgb(234, 214, 175);
   /* Change background color on hover */
-  color: orangered;
+  color:rgb(0 92 184);
 }
 
 
@@ -5108,7 +5108,7 @@ h1 {
   margin-bottom: 50px;
   margin-top: 222px;
   margin-right: 31rem;
-  color: rgb(190, 51, 0);
+  color: rgb(3 0 132);
   text-align: center;
   font-weight: 500;
   font-family: Montserrat;
@@ -5117,9 +5117,9 @@ h1 {
   margin-bottom: 2rem;
   margin-top: -6rem;
   box-shadow: 1rem solid black;
-  border: 1rem solid #ffd4ba;
+  border: 1rem solid #c4c8f8;
   border-radius: 2rem;
-  box-shadow: inset 3px 2px rgb(179 158 145);
+  box-shadow: inset 3px 2px rgb(151 145 179);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
 }
@@ -5328,7 +5328,7 @@ h2 {
 button:hover,
 .button:hover {
   /* background-color: rgb(0, 0, 0) !important; */
-  /* color: orangered; */
+  /* color:rgb(0 92 184); */
 }
 
 .profile-page button:after,
@@ -5375,7 +5375,7 @@ button:before,
 }
 
 .profile-page .tab-toggle:hover {
-  color: orangered;
+  color:rgb(0 92 184);
   background-color: rgb(0, 0, 0);
 }
 
@@ -5386,7 +5386,7 @@ button:before,
 }
 
 .profile-page .tab-toggle.active {
-  color: orangered;
+  color:rgb(0 92 184);
   background-color: rgb(0, 0, 0);
 }
 
@@ -5483,7 +5483,7 @@ button:before,
   margin-bottom: 2px;
   width: 120px;
   height: 48px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5506,7 +5506,7 @@ button:before,
   margin-bottom: 2px;
   width: 120px;
   height: 48px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5529,7 +5529,7 @@ button:before,
   margin-bottom: 2px;
   width: 120px;
   height: 48px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5616,7 +5616,7 @@ button:before,
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #DD2476, #FF512F);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   top: 0;
   left: 100%;
   transition: left 0.3s ease-in-out;
@@ -6102,11 +6102,11 @@ button:before,
 
 .imgchart-option:hover {
   background-color: #000;
-  color: orangered;
+  color:rgb(0 92 184);
 }
 
 .imgchart-option.selected {
-  color: orangered;
+  color:rgb(0 92 184);
   background-color: #000;
 }
 
@@ -6119,7 +6119,7 @@ button:before,
 }
 
 .imgchart-selected-option {
-  color: orangered;
+  color:rgb(0 92 184);
   font-weight: bold;
 }
 
@@ -6307,7 +6307,7 @@ button:before,
   font-size: larger;
   font-weight: 400;
   box-sizing: border-box;
-  background-color: #fff8ed;
+  background-color: aliceblue;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   /* padding-right: 0px; */
@@ -6408,7 +6408,7 @@ input[type="file"] {
   width: 80%;
   padding: 9px;
   margin-left:135px;
-  background-color: #fff8ed;
+  background-color: aliceblue;
   margin-bottom: 10px;
   /* border: 1px solid #443f3f; */
   box-shadow: 0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19);
@@ -6440,7 +6440,7 @@ input[type="date"] {
   width: 80%;
   padding: 9px;
   margin-left: 100px;
-  background-color: #fff8ed;
+  background-color: aliceblue;
   margin-bottom: 10px;
   /* border: 1px solid #443f3f; */
   box-shadow: 0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19);
@@ -6457,7 +6457,7 @@ input[type="submit"]:hover {
   margin-top: 20px;
   width: 80%;
   margin-left: 135px;
-  background-color: #fff8ed;
+  background-color: aliceblue;
   padding: 20px;
   border-radius: 5px;
   /* border: 1px solid #443f3f; */

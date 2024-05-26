@@ -3,7 +3,7 @@ import { Link, useNavigate,useLocation  } from "react-router-dom";
 
 import tech from "./images/tech-category.svg";
 import nontech from "./images/non-tech.svg";
-import element from "./images/element.svg";
+import element from "./images/element.png";
 import HomeHeader from "./Home-Header";
 const HomeProjectCategoryList = () => {
   const Rating = 5;

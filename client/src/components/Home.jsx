@@ -226,9 +226,10 @@ const Home = () => {
         src={ribbon}
         style={{
           width: "100%",
-          marginTop: "-900px",
-          opacity: "0.8",
-          zIndex: "2",
+          height:"50%",
+          marginTop: "-400px",
+          opacity: "0.05",
+          zIndex: "0",
         }}
       />
       <HomeProjectCategory />
