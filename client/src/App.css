@@ -44,7 +44,7 @@ body{
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #FFD4BA #DFE9EB;
+  scrollbar-color: #badbff #DFE9EB;
 }
 
 /* Chrome, Edge and Safari */
@@ -234,8 +234,6 @@ body {
   backdrop-filter: blur(79px);
   background: #bfbebe00;
   box-shadow: 0px 10px 19px -15px black;
-
-
   transition: 0.5s cubic-bezier(0.33, 0.85, 0.4, 0.96);
   padding: 39px 0px 17px 21px
     /* background-color: wheat; */
@@ -245,7 +243,7 @@ body {
 
 .header-part1 {
   transition: opacity 0.5s ease-in-out;
-  margin-bottom: 10px
+  margin-bottom: -10px
 }
 
 .header-part1.hidden {
@@ -282,7 +280,7 @@ nav {
 
 nav h4 {
   font-family: 'Kanit', sans-serif !important;
-  color: rgb(190, 51, 0);
+  color: rgb(2 0 73);
   line-height: var(--navheight);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -319,7 +317,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  color: #be3300;
+  color: #0e4db3;
 }
 
 .aHome{
@@ -392,7 +390,7 @@ nav ul li ul {
 
 .login-btn {
   /* gap: 8px; */
-  background-color: orange;
+  background-color: #687dff;
   color: var(--white);
   float: right;
   padding-inline: 25px;
@@ -927,7 +925,7 @@ input.button.hover,
 button.hover {
   top: -3px;
   transform: translate(0px, 0px);
-  background: linear-gradient(rgb(239, 69, 89) 0px, rgb(238, 112, 44) 100%);
+  background: linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%);
   ;
   color: aliceblue;
 }
@@ -1376,7 +1374,7 @@ button.accent3.active {
 }
 
 .metrics div:hover i {
-  color: orange;
+  color: #687dff;
 }
 
 .metrics div p {
@@ -1386,7 +1384,7 @@ button.accent3.active {
 
 
 .fa-solid.fa-thumbs-up.filled {
-  color: orange;
+  color: #657cf3;
 }
 
 .fa-solid.fa-thumbs-up {
@@ -1394,7 +1392,7 @@ button.accent3.active {
 }
 
 .fa-solid.fa-thumbs-up:hover {
-  color: orange;
+  color: #657cf3;
 }
 
 
@@ -1411,7 +1409,7 @@ button.accent3.active {
 .profile__info h3 {
   font-weight: bold;
   text-align: center;
-  color: maroon;
+  color: rgb(2 0 73);
   margin-top: 1rem;
   font-family: var(--montserrat);
   text-align-last: left;
@@ -2362,7 +2360,7 @@ watch-video .video-container {
 
 .logo-and-text img {
   margin-left: -10px;
-    margin-top: 17px;
+    margin-top: 6px;
   /* Adjust as needed for spacing between image and text */
 }
 
@@ -2909,7 +2907,7 @@ select {
   outline: 0;
   box-shadow: none;
   border: 0 !important;
-  background: #be3300;
+  background: #0e4db3;
   background-image: none;
   flex: 1;
   padding: 0 .5em;
@@ -3513,7 +3511,7 @@ select::-ms-expand {
   left: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #fa5d1e, #e46f33);
+  background: -webkit-linear-gradient(rgb(1, 57, 148) 0px, rgb(31, 54, 155) 100%);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -3589,7 +3587,7 @@ input[type="radio"] {
   /* Set your background color */
   box-shadow: rgba(4, 4, 4, 0.1) 0px 1px 2px inset, rgba(0, 0, 0, 0.1) 0px 1.5px 3px;
   transition: box-shadow 0.3s ease 0s;
-  border-color: maroon;
+  border-color: rgb(2 0 73);
   /* box-shadow: inset 0 0 3px #fb6aae; */
 }
 
@@ -3613,7 +3611,7 @@ form .field input:focus::placeholder {
 
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-  color: maroon;
+  color: rgb(2 0 73);
   text-decoration: none;
 }
 
@@ -3635,7 +3633,7 @@ form .btn .btn-layer {
   width: 300%;
   position: absolute;
   left: -100%;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   /* border-radius: 14px; */
   transition: all 0.4s ease;
   ;
@@ -3832,7 +3830,7 @@ form .btn input[type="submit"] {
   margin-left: 0rem;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  border-right: 1px solid blue;
+  border-right: 2px solid rgb(185 189 224);
   /* Add border on the right */
 
 }
@@ -3904,18 +3902,18 @@ form .btn input[type="submit"] {
 }
 
 .fa-eye {
-  color: #ef5d41;
+  color: #657cf3;
 }
 
 .card__clock {
-  color: #ef5d41;
+  color: #657cf3;
   margin-left: 8rem;
   fill: currentColor;
 
 }
 
 .fa-thumbs-up {
-  color: #ef5d41;
+  color: #657cf3;
   margin-top: -0.4rem;
 }
 
@@ -3924,7 +3922,7 @@ form .btn input[type="submit"] {
   text-align: center;
   margin-top: 2px;
   font-size: 21px;
-  color: maroon;
+  color: rgb(2 0 73);
   font-weight: bold;
   font-family: var(--montserrat);
   font-weight: 500;
@@ -3993,7 +3991,7 @@ form .btn input[type="submit"] {
 }
 
 .sidebar-submenu-title:hover {
-  color: #be3300;
+  color: #0e4db3;
 }
 
 .sidebar .product-name {
@@ -4155,7 +4153,7 @@ form .btn input[type="submit"] {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   color: var(--white);
   font-size: 22px;
   padding: 12px 23px;
@@ -4168,7 +4166,7 @@ form .btn input[type="submit"] {
 }
 
 .back-top-btn:hover {
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   top: auto !important;
   color: white;
   border-radius: 12rem;
@@ -4289,7 +4287,7 @@ button {
 .card__clock {
   width: 25px;
   vertical-align: middle;
-  fill: #ef5d41;
+  fill: #657cf3;
   margin-left: 8rem;
 }
 
@@ -4346,8 +4344,8 @@ button {
   border-radius: 1rem;
   overflow: hidden;
   /* border: 1px solid black; */
-  border: 5px solid #b3938054;
-  box-shadow: 16px 16px 45px -15px rgb(252 147 79);
+  border: 5px solid #61719e54;
+  box-shadow: 16px 16px 45px -15px rgb(118 110 245);
 }
 
 .card:hover {
@@ -4357,7 +4355,7 @@ button {
 
 .card__info {
   z-index: 2;
-  background-color: #fed4b959;
+  background-color: aliceblue;
   /* border-top-left-radius: 4rem; */
   /* border-top-right-radius: 1rem; */
   border-bottom-left-radius: 12px;
@@ -4420,7 +4418,7 @@ button {
   opacity: 0.8;
   border-radius: 1rem;
 
-  /* border: 3px solid #be3300; */
+  /* border: 3px solid #0e4db3; */
 }
 
 .card:hover .card__info {
@@ -4575,7 +4573,7 @@ button {
 
 .btn-primary.custom-file-control:before,
 .btn.btn-primary {
-  background-color: orange;
+  background-color: #687dff;
   /* Set the background color of the button */
   border: none;
   /* Remove border */
@@ -5089,7 +5087,7 @@ h1 {
   margin-bottom: 50px;
   margin-top: 222px;
   margin-right: 30rem;
-  color: rgb(190, 51, 0);
+  color: rgb(2 0 73);
   text-align: center;
   font-weight: 500;
   font-family: Montserrat;
@@ -5108,7 +5106,7 @@ h1 {
   margin-bottom: 50px;
   margin-top: 222px;
   margin-right: 31rem;
-  color: rgb(3 0 132);
+  color: rgb(2 0 73);
   text-align: center;
   font-weight: 500;
   font-family: Montserrat;
@@ -5360,7 +5358,7 @@ button:before,
 }
 
 .profile-page .heading {
-  color: orange;
+  color: #657cf3;
   font-family: cursive;
   margin-bottom: 50px !important;
 }
@@ -5460,7 +5458,7 @@ button:before,
   /* margin-left: 350px; */
   margin-top: 25px;
   width: 300px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5553,7 +5551,7 @@ button:before,
   /* margin-bottom: 2px; */
   width: 140px;
   height: 33px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background-color: rgb(17, 72, 188);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5576,7 +5574,7 @@ button:before,
   /* margin-bottom: 2px; */
   width: 140px;
   height: 33px;
-  background: linear-gradient(45deg, #FF512F, #DD2476);
+  background-color: rgb(17, 72, 188);
   color: white !important;
   border: none;
   border-radius: 5px;
@@ -5616,7 +5614,7 @@ button:before,
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #3c2fff, #24a6dd);
+  background-color: rgb(17, 72, 188);
   top: 0;
   left: 100%;
   transition: left 0.3s ease-in-out;
@@ -5669,7 +5667,7 @@ button:before,
 }
 
 .profile-page button#sendMessage {
-  background-color: #FF9800;
+  background-color: #002aff;
   height: 40px;
   width: 80px;
   border-radius: 20px;
@@ -5783,7 +5781,7 @@ button:before,
   width: 1000px;
   display: flex;
   border-radius: 10px;
-  border: 3px solid orange;
+  border: 3px solid #687dff;
   padding: 20px 50px;
   justify-content: space-around;
   align-items: center;
@@ -6424,7 +6422,7 @@ input[type="file"] {
 }
 
 input[type="submit"] {
-  background-color: #be3300;
+  background-color: #0e4db3;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -6678,7 +6676,7 @@ input[type="submit"]:hover {
       margin-top: 70px;
       padding: 0px;
       border-radius: 30px !important;
-      /* box-shadow: inset 0px 0px 24px -6px #be3300; */
+      /* box-shadow: inset 0px 0px 24px -6px #0e4db3; */
       box-shadow:  27px 17px 41px -27px rgb(69 60 54 / 26%);
       background-color: rgb(255, 255, 255);
       -webkit-backdrop-filter: blur(12px);
@@ -6705,7 +6703,7 @@ input[type="submit"]:hover {
     }
     
     .CGprofile-card .CGheader h1 {
-      color: maroon;
+      color: rgb(2 0 73);
     }
     
     .CGprofile-card .CGheader a {
@@ -6998,7 +6996,7 @@ input[type="submit"]:hover {
     margin-bottom: 10px;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(79px);
-    background: #fff7ed;
+    background: #f2edff;
    box-shadow: 0px 10px 10px -15px black;
   
   

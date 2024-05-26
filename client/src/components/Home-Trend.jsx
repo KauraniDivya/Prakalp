@@ -27,7 +27,7 @@ const HomeTrendProject = () => {
 
   return (
     <>
-      <h1 className="topPicks" style={{ color: 'rgb(3 0 132)',
+      <h1 className="topPicks" style={{ color: 'rgb(2 0 73)',
   textAlign: 'center',
   fontWeight: 500,
   fontFamily: 'Montserrat',
@@ -53,7 +53,7 @@ const HomeTrendProject = () => {
                 transform: 'translateX(-50%)',
                 width: '30px',
                 height: '30px',
-                backgroundColor: 'rgba(255, 136, 0, 0.9)', // Orange color
+                backgroundColor: 'rgba(255, 136, 0, 0.9)',
                 color: '#fff',
                 borderRadius: '50%',
                 display: 'flex',
@@ -62,8 +62,8 @@ const HomeTrendProject = () => {
                 fontWeight: 'bold',
                 fontSize: '16px',
                 boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
-                border: '2px solid rgba(255, 136, 0, 0.9)', // Orange border
-                background: 'linear-gradient(45deg, rgba(255, 136, 0, 0.9), rgba(145, 61, 136, 0.9), rgba(219, 43, 138, 0.9))', // Gradient from orange to violet to pink
+                border: '2px solid rgba(255, 255, 255, 0.9)', 
+                background: 'linear-gradient(45deg, rgb(0 10 255 / 90%), rgb(86 68 255 / 90%), rgb(55 43 219 / 90%))', 
                 transition: 'transform 0.3s ease-out',
               }}
             >

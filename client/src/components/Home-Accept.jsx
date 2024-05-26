@@ -117,14 +117,14 @@ const handleTeamLeadChange = (e) => {
         onClick={handleAddResource}
         disabled={!currentResource}
         style={{
-          background: 'linear-gradient(45deg, #FFA07A, #FF6347)',
+          background: 'linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)',
         }}
       >
         Add
       </button>
     </div>
 
-    <div className="form-section" style={{ width: '97%', backgroundColor: '#fff8ed', marginLeft: '30px', boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0', padding: '10px', paddingLeft: '0px !important', paddingBottom: '0px', display: 'flex', gap: '20px' }}>
+    <div className="form-section" style={{ width: '97%', backgroundColor: 'aliceblue', marginLeft: '30px', boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0', padding: '10px', paddingLeft: '0px !important', paddingBottom: '0px', display: 'flex', gap: '20px' }}>
       <label style={{ paddingBottom: '0px !important', fontWeight: '400' }}>Selected Resources</label>
       {selectedResources.map((resource, index) => (
         <div key={index} className="selected-member">
@@ -219,14 +219,14 @@ const handleTeamLeadChange = (e) => {
             onClick={handleAddTeamMember}
             disabled={!selectedTeamMember}
             style={{
-              background:"linear-gradient(45deg, #FFA07A, #FF6347)"
+              background:"linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)"
             }}
           >
             Add
           </button>
         </div>
 
-        <div className="form-section" style={{ width:"97%", backgroundColor:"#fff8ed", marginLeft:"30px", boxShadow:"0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0", padding:"10px", paddingLeft:"0px !important", paddingBottom:"0px", display:"flex", gap:"20px"}}>
+        <div className="form-section" style={{ width:"97%", backgroundColor:"aliceblue", marginLeft:"30px", boxShadow:"0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0", padding:"10px", paddingLeft:"0px !important", paddingBottom:"0px", display:"flex", gap:"20px"}}>
           <label style={{paddingBottom:"0px !important", fontWeight:"400"}}>Selected Team Members</label>
           {selectedTeamMembers.map((member, index) => (
             <div key={index} className="selected-member">

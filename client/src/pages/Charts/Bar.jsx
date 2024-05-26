@@ -33,7 +33,7 @@ const Bar = () => {
   }, [state?.usertype, state?._id]);
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-orange-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-blue-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
       <ChartsHeader category="Bar" title="Top Domains with Most Likes" />
       <div style={{width:'200px',marginLeft:'-30px'}}>
         <ChartComponent
@@ -42,8 +42,8 @@ const Bar = () => {
           primaryYAxis={{ title: 'Likes' }}
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true }}
-          background="#fff7ed"
-          legendSettings={{ background: '#fff7ed' }}
+          background="#f2edff"
+          legendSettings={{ background: '#f2edff' }}
         >
           <Inject services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]} />
           <SeriesCollectionDirective>

@@ -39,7 +39,7 @@ const Notification = () => {
           </p>
           <button
   type="button"
-  className="text-white text-xs rounded p-1 px-2 bg-orange-theme"
+  className="text-white text-xs rounded p-1 px-2 bg-blue-100"
   onClick={() => {
     handleNotificationClick(chatData[0]); // Assuming you want to simulate a click on the first notification
     handleClose();

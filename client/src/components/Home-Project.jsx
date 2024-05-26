@@ -356,7 +356,7 @@ const HomeProject = () => {
   justifyContent: "center",
   alignItems: "center",
   border: "none", // Remove default button border
-  backgroundColor: "orange", // Set the background color
+  backgroundColor: "#687dff", // Set the background color
 
   // Add styles for the arrow
   color: "#fff", // Set arrow color

@@ -87,7 +87,7 @@ const CgList = () => {
           alt="Logo of College 1"
           style={{ width: "200px", borderRadius: "50%", marginBottom: "12px", height:"200px", marginLeft:"50px" }}
         />
-        <h3 style={{ marginBottom: "8px", color: "maroon", fontWeight:"600", fontFamily:"Montserrat", fontSize:"20px", height:"50px", textAlign:"center" }}>{user?.shortname}</h3>
+        <h3 style={{ marginBottom: "8px", color: "rgb(49 77 142)", fontWeight:"600", fontFamily:"Montserrat", fontSize:"20px", height:"50px", textAlign:"center" }}>{user?.shortname}</h3>
         <p style={{ marginBottom: "8px", color: "#777" }}> {user?.nameofstate} </p>
         <Link
           to={`/viewcollege/${user?._id}`}
@@ -98,7 +98,7 @@ const CgList = () => {
             padding: "8px 16px",
             textDecoration: "none",
             borderRadius: "4px",
-            background: "linear-gradient(45deg, #FF512F, #DD2476)",
+            background: "linear-gradient(45deg, #0d0866, rgb(58 100 218))",
   color: "white",
   border: "none",
   borderRadius: "5px",

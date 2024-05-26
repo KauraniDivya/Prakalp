@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate,useLocation  } from "react-router-dom";
 
-import tech from "./images/tech-category.svg";
-import nontech from "./images/non-tech.svg";
+import tech from "./images/tech.png";
+import nontech from "./images/non-tech.png";
 import element from "./images/element.png";
 import HomeHeader from "./Home-Header";
 const HomeProjectCategoryList = () => {

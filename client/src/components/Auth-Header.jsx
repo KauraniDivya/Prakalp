@@ -4,7 +4,7 @@ import { Link} from "react-router-dom";
 import logo from "./images/79.png";
 import techn from "./images/techn.png";
 import logo2 from "./images/jharkhand.png";
-import unite from "./images/unitenew.svg";
+import prakalp from "./images/prakalp.svg";
 // import oscillate from "./images/oooscillate.svg"
 // import endless from "./images/abstract-timekeeper.png";
 const AuthHeader = () => {
@@ -27,7 +27,7 @@ const AuthHeader = () => {
             <div className="logo-and-text">
               <img src={logo} alt="logo" />
               <h4>
-                <img src={unite} style={{width:"500px", marginLeft:"400px"}}/>
+                <img src={prakalp} style={{width:"250px", marginLeft:"400px"}}/>
               </h4>
     
 

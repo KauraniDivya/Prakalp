@@ -78,10 +78,10 @@ const CRD_Chat = () => {
     <>
     <div className="flex h-screen antialiased text-gray-800">
     <div className="flex flex-row h-full w-full overflow-x-hidden">
-    <div className="flex flex-col py-8 pl-6 pr-2 w-64 bg-orange-50 flex-shrink-0">
+    <div className="flex flex-col py-8 pl-6 pr-2 w-64 bg-blue-50 flex-shrink-0">
       <div className="flex flex-row items-center justify-center h-12 w-full">
         <div
-          className="flex items-center justify-center rounded-2xl text-orange-700 bg-orange-100 h-10 w-10"
+          className="flex items-center justify-center rounded-2xl text-blue-700 bg-blue-100 h-10 w-10"
         >
           <svg
             className="w-6 h-6"
@@ -101,7 +101,7 @@ const CRD_Chat = () => {
         <div className="ml-2 font-bold text-2xl"></div>
       </div>
       <div
-        className="flex flex-col items-center bg-orange-100 border border-orange-200 mt-4 w-full py-6 px-4 rounded-lg"
+        className="flex flex-col items-center bg-blue-100 border border-blue-200 mt-4 w-full py-6 px-4 rounded-lg"
       >
         <div className="h-20 w-20 rounded-full border overflow-hidden">
           <img
@@ -114,9 +114,9 @@ const CRD_Chat = () => {
         <div className="text-xs text-gray-500">Web Development</div>
         <div className="flex flex-row items-center mt-3">
           <div
-            className="flex flex-col justify-center h-4 w-8 bg-orange-500 rounded-full"
+            className="flex flex-col justify-center h-4 w-8 bg-blue-500 rounded-full"
           >
-            <div className="h-3 w-3 bg-orange-50 rounded-full self-end mr-1"></div>
+            <div className="h-3 w-3 bg-blue-50 rounded-full self-end mr-1"></div>
           </div>
           <div className="leading-none ml-1 text-xs">In Progress</div>
         </div>
@@ -137,7 +137,7 @@ const CRD_Chat = () => {
               className="flex flex-row items-center hover:bg-gray-100 rounded-xl p-2"
             >
               <div
-                className="flex items-center justify-center h-8 w-8 bg-orange-200 rounded-full"
+                className="flex items-center justify-center h-8 w-8 bg-blue-200 rounded-full"
               >
                 {member.charAt(0)}
               </div>
@@ -148,14 +148,14 @@ const CRD_Chat = () => {
       </div>
     </div>
     <div className="flex flex-col flex-auto h-full p-6">
-        <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-orange-100 h-full p-4">
+        <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-blue-100 h-full p-4">
           <div className="flex flex-col h-full overflow-x-auto mb-4">
             <div className="flex flex-col h-full">
               <div className="grid grid-cols-12 gap-y-2">
                 {messages.map((message, index) => (
                   <div key={index} className={`col-start-1 col-end-13 p-3`}>
                     <div className={`flex ${message.sender === "You" ? "flex-row-reverse" : "flex-row"} items-center`}>
-                      <div className={`flex items-center justify-center h-10 w-10 rounded-full bg-orange-500 flex-shrink-0`}>
+                      <div className={`flex items-center justify-center h-10 w-10 rounded-full bg-blue-500 flex-shrink-0`}>
                         {message.sender}
                       </div>
                       <div className={`relative ${message.sender === "You" ? "mr-3" : "ml-3"} text-sm bg-${message.sender === "You" ? "indigo-100" : "white"} py-2 px-4 shadow rounded-xl`}>
@@ -187,7 +187,7 @@ const CRD_Chat = () => {
             </div>
           </div>
            
-          <div className="chatbox-input" style={{backgroundColor:'#fff7ed',borderBottomRightRadius:'20px',borderTopRightRadius:'20px',borderRadius:'none'}}>
+          <div className="chatbox-input" style={{backgroundColor:'#f2edff',borderBottomRightRadius:'20px',borderTopRightRadius:'20px',borderRadius:'none'}}>
       <i className="fa-regular fa-face-grin" onClick={handlePollIconClick}></i>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <label htmlFor="fileInput" style={{ cursor: 'pointer' }}>
@@ -197,7 +197,7 @@ const CRD_Chat = () => {
         <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileInputChange} />
       </div>
       <input type="text" placeholder="Type a message" value={newMessage} onChange={(e) => setNewMessage(e.target.value)} />
-      <button style={{ marginLeft: '8px', background: '#f97316', color: '#fff', padding: '20px 12px', width:'100px', borderTopRightRadius:'20px',borderBottomRightRadius:'20px', cursor: 'pointer' }} onClick={handleSendMessage}>Send</button>
+      <button style={{ marginLeft: '8px', background: '#1148bc', color: '#fff', padding: '20px 12px', width:'100px', borderTopRightRadius:'20px',borderBottomRightRadius:'20px', cursor: 'pointer' }} onClick={handleSendMessage}>Send</button>
     </div>
     {showPoll && <PollContainer onSubmit={handlePollSubmit} />}
   

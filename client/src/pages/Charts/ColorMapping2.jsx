@@ -24,7 +24,7 @@ const ColorMapping2 = () => {
   }, []);
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-orange-50 dark:bg-secondary-dark-bg rounded-3xl fixed" style={{width:'1050px'}}>
+    <div className="m-4 md:m-10 mt-24 p-10 bg-blue-50 dark:bg-secondary-dark-bg rounded-3xl fixed" style={{width:'1050px'}}>
       <ChartsHeader category="Color Mapping" title="Top 5 State with Most Projects" />
       <div style={{width:'950px'}}>
         <ChartComponent
@@ -39,9 +39,9 @@ const ColorMapping2 = () => {
            
           }}
           chartArea={{ border: { width: 0 } }}
-          legendSettings={{ mode: 'Range', background: '#fff7ed' }}
+          legendSettings={{ mode: 'Range', background: '#f2edff' }}
           tooltip={{ enable: true }}
-          background="#fff7ed"
+          background="#f2edff"
           height="400"
         >
           <Inject services={[ColumnSeries, Tooltip, Category, Legend]} />

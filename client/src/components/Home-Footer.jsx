@@ -13,7 +13,7 @@ const HomeFooter = () => {
                     <div className="col-xl-4 col-lg-4 mb-50">
                         <div className="footer-widget">
                         <div className="footer-widget-heading">
-                           <h3>Sankalp</h3>
+                           <h3>Prakalp</h3>
                            </div>
                             <div className="footer-text">
                                 <p>Empowering Innovation: Join us in shaping the future with our groundbreaking projects.Together, We Build Tomorrow: Discover our initiatives that are driving change today.</p>

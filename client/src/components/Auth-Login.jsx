@@ -194,7 +194,7 @@ const AuthLogin = () => {
                             textAlign: "center",
                             marginLeft: "0rem",
                             background:
-                              "linear-gradient(45deg, #FFA07A, #FF6347)",
+                              "linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)",
                             marginTop: "-7px",
                             paddingTop: "3px",
                             fontFamily: "Montserrat",
@@ -340,7 +340,7 @@ const AuthLogin = () => {
                             textAlign: "center",
                             marginLeft: "0rem",
                             background:
-                              "linear-gradient(45deg, #FFA07A, #FF6347)",
+                              "linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)",
                             marginTop: "7px",
                             paddingTop: "3px",
                             fontFamily: "Montserrat",
@@ -374,10 +374,10 @@ const AuthLogin = () => {
                       fontFamily: "Montserrat",
                       fontSize: "20px",
                       fontWeight: "600",
-                      color: "maroon",
+                      color: "rgb(2 0 73)",
                     }}
                   >
-                    Welcome to Sankalp!
+                    Welcome to Prakalp!
                   </h2>
                   <p
                     style={{
@@ -401,7 +401,7 @@ const AuthLogin = () => {
                       fontFamily: "Montserrat",
                       fontSize: "20px",
                       fontWeight: "600",
-                      color: "maroon",
+                      color: "rgb(2 0 73)",
                     }}
                   >
                     Collaborate and Innovate Together
@@ -428,7 +428,7 @@ const AuthLogin = () => {
                       fontFamily: "Montserrat",
                       fontSize: "20px",
                       fontWeight: "600",
-                      color: "maroon",
+                      color: "rgb(2 0 73)",
                     }}
                   >
                     Revolutionizing Technology and Inspiring Creativity

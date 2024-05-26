@@ -61,15 +61,15 @@ function CRD_GanttChart() {
     progress: 'Progress',
     child: 'subtasks',
     dependency: 'Predeceesor',
-    color:'#fff7ed'
+    color:'#f2edff'
   };
 
   return (
-    <div style={{backgroundColor:'#fff7ed',margin:'20px',padding:'20px',borderRadius:'10px'}}>
+    <div style={{backgroundColor:'#f2edff',margin:'20px',padding:'20px',borderRadius:'10px'}}>
       <GanttComponent dataSource={projectData} taskFields={taskValues} allowPaging
     pageSettings={{ pageSize: 5 }}>
         <ColumnsDirective>
-          <ColumnDirective field="TaskID" headerText="ID" style={{backgroundColor:'#fff7ed'}} />
+          <ColumnDirective field="TaskID" headerText="ID" style={{backgroundColor:'#f2edff'}} />
           <ColumnDirective field="TaskName" headerText="Name" />
           <ColumnDirective field="StartDate" format="dd-MMM-yy" />
           <ColumnDirective field="Duration" textAlign="Right" />

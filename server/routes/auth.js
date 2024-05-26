@@ -76,7 +76,7 @@ router.post("/signup", (req, res) => {
                 transporter.sendMail({
                   from: "mykyadav2003@gmail.com", // Your email address
                   to: savedUser.email, // Your email address
-                  subject: "🎁 OTP Verification - Sankalp",
+                  subject: "🎁 OTP Verification - Prakalp",
                   html: `
                   <html>
                   <head>
@@ -144,7 +144,7 @@ router.post("/signup", (req, res) => {
                 transporter.sendMail({
                   from: "mykyadav2003@gmail.com", // Your email address
                   to: user.email, // Your email address
-                  subject: "🎁 OTP Verification - Sankalp",
+                  subject: "🎁 OTP Verification - Prakalp",
                   html: `
                   <html>
                   <head>

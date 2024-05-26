@@ -49,7 +49,7 @@ const Alerts = () => {
   };
 
   return (
-    <div style={{ width: '800px', margin: 'auto', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', padding: '20px', backgroundColor: '#fff7ed', height: '600px' }}>
+    <div style={{ width: '800px', margin: 'auto', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', padding: '20px', backgroundColor: '#f2edff', height: '600px' }}>
       <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Event Form</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '15px' }}>

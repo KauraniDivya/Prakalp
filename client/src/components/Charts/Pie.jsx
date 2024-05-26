@@ -9,9 +9,9 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
   return (
     <AccumulationChartComponent
       id={id}
-      legendSettings={{ visible: legendVisiblity, background: '#fff7ed' }}
+      legendSettings={{ visible: legendVisiblity, background: '#f2edff' }}
       height={height}
-      background={currentMode === 'Dark' ? '#33373E' : '#fff7ed'}
+      background={currentMode === 'Dark' ? '#33373E' : '#f2edff'}
       tooltip={{ enable: true }}
     >
       <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]} />

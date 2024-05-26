@@ -43,7 +43,7 @@ const AdminUserList = () => {
   }, [state?.usertype, state?._id]);
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-orange-50 rounded-3xl fixed" style={{width:'1050px',textAlign:'left'}}>
+    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-blue-50 rounded-3xl fixed" style={{width:'1050px',textAlign:'left'}}>
       <Header  title="Users" />
       <GridComponent
         dataSource={usersData}

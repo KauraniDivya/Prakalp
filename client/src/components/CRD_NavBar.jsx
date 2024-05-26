@@ -63,7 +63,7 @@ const CRD_NavBar = () => {
                     alignItems: 'center',
   textAlign: 'center',
   marginLeft: '0rem',
-  background: 'linear-gradient(45deg, rgb(255, 160, 122), rgb(255, 99, 71))',
+  background: 'rgb(17, 72, 188)',
   marginTop: '-30px',
   paddingTop: '6px',
   fontFamily: 'Montserrat',

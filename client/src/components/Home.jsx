@@ -227,7 +227,7 @@ const Home = () => {
         style={{
           width: "100%",
           height:"50%",
-          marginTop: "-400px",
+          marginTop: "-900px",
           opacity: "0.05",
           zIndex: "0",
         }}

@@ -341,7 +341,7 @@ const HomeViewProject = () => {
           },
         }}
       >
-        <h1 style={{marginLeft:"-750px", marginTop:"0px", marginBottom:"0px", fontFamily:"Montserrat", color:"maroon", fontWeight:"500"}}>Summary</h1>
+        <h1 style={{marginLeft:"-750px", marginTop:"0px", marginBottom:"0px", fontFamily:"Montserrat", color:"rgb(2 0 73)", fontWeight:"500"}}>Summary</h1>
         <div style={{ maxHeight: "220px", overflowY: "auto" }}>
           {typedContent}
         </div>
@@ -576,7 +576,7 @@ const HomeViewProject = () => {
         position: "relative",
         borderRadius: "1rem",
         overflow: "hidden",
-        border: "5px solid #b3938054",
+        border: "5px solid #8097b354",
         boxShadow: "16px 16px 45px -15px rgba(0, 0, 0, 0.54)",
       }}
     >
@@ -789,7 +789,7 @@ const HomeViewProject = () => {
                       fontSize: "25px",
                       textShadow: "inherit",
                       fontWeight: "bold !important",
-                      color: "maroon",
+                      color: "rgb(2 0 73)",
                     }}
                   >
                     Abstract
@@ -800,7 +800,7 @@ const HomeViewProject = () => {
                     maxLines={4}
                   />
                   <br />
-                  <h2 style={{ color: "maroon" }}>Description</h2>
+                  <h2 style={{ color: "rgb(2 0 73)" }}>Description</h2>
                   <hr />
                   <ReadMoreBox
                     initialText={projectDetails?.description}
@@ -809,7 +809,7 @@ const HomeViewProject = () => {
                   <br />
 
                   <div>
-                    <h2 style={{ color: "maroon" }}>Domain</h2>
+                    <h2 style={{ color: "rgb(2 0 73)" }}>Domain</h2>
                     <hr />
                     <div
                       style={{
@@ -827,7 +827,7 @@ const HomeViewProject = () => {
                     </div>
                     <br />
 
-                    <h2 style={{ color: "maroon" }}>Project Method</h2>
+                    <h2 style={{ color: "rgb(2 0 73)" }}>Project Method</h2>
                     <hr />
                     <br />
                     <div
@@ -845,7 +845,7 @@ const HomeViewProject = () => {
                     </div>
                     <br />
 
-                    <h2 style={{ color: "maroon" }}>Project Type</h2>
+                    <h2 style={{ color: "rgb(2 0 73)" }}>Project Type</h2>
                     <hr />
                     <br />
                     <div
@@ -892,7 +892,7 @@ const HomeViewProject = () => {
                     position: "relative",
                     borderRadius: "1rem",
                     overflow: "hidden",
-                    border: "5px solid #b3938054",
+                    border: "5px solid #8097b354",
                     boxShadow: "16px 16px 45px -15px rgba(0, 0, 0, 0.54)",
                   }}
                 >
@@ -983,7 +983,7 @@ const HomeViewProject = () => {
                     position: "relative",
                     borderRadius: "1rem",
                     overflow: "hidden",
-                    border: "5px solid #b3938054",
+                    border: "5px solid #8097b354",
                     boxShadow: "16px 16px 45px -15px rgba(0, 0, 0, 0.54)",
                     cursor: "pointer",
                   }}
@@ -1189,7 +1189,7 @@ const HomeViewProject = () => {
               className="right-section"
               style={{ marginTop: "100px", marginLeft: "30px" }}
             >
-              <h2 style={{ color: "maroon" }}>Mentor</h2>
+              <h2 style={{ color: "rgb(2 0 73)" }}>Mentor</h2>
               <hr />
               <div className="right-section" style={{ marginTop: '20px', marginLeft: '0px' }}>
               {projectDetails?.mentors &&
@@ -1241,7 +1241,7 @@ const HomeViewProject = () => {
     </div>
             </div>
             <h2
-              style={{ color: "maroon", marginTop: "40px", marginLeft: "50px" }}
+              style={{ color: "rgb(2 0 73)", marginTop: "40px", marginLeft: "50px" }}
             >
               Team Members
             </h2>
@@ -1300,7 +1300,7 @@ const HomeViewProject = () => {
                 ))}
             </div>
             <div>
-              <h2 style={{ color: "maroon" }}>Tech Stack</h2>
+              <h2 style={{ color: "rgb(2 0 73)" }}>Tech Stack</h2>
               <hr />
               <div>
                 {projectDetails?.technologyStack &&
@@ -1566,7 +1566,7 @@ const HomeViewProject = () => {
                   <div style={{ marginTop: "20px" }}>
                     <h2
                       style={{
-                        color: "maroon",
+                        color: "rgb(2 0 73)",
                         fontSize: "20px",
                         borderBottom: "2px solid #FF0000",
                         paddingBottom: "10px",
@@ -1820,7 +1820,7 @@ const HomeViewProject = () => {
                   <div style={{ marginTop: "20px" }}>
                     <h2
                       style={{
-                        color: "maroon",
+                        color: "rgb(2 0 73)",
                         fontSize: "20px",
                         borderBottom: "2px solid #FF0000",
                         paddingBottom: "10px",

@@ -24,7 +24,7 @@ const ColorMapping = () => {
   }, []);
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-orange-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-blue-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
       <ChartsHeader category="Color Mapping" title="Top 8 Universities with Most Projects" />
       <div className="w-full">
         <ChartComponent
@@ -41,7 +41,7 @@ const ColorMapping = () => {
           chartArea={{ border: { width: 0 } }}
           legendSettings={{ mode: 'Range', background: 'white' }}
           tooltip={{ enable: true }}
-          background="#fff7ed"
+          background="#f2edff"
           height="400"
           width='1000'
         >

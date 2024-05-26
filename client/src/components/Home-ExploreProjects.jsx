@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from '../App';
 
-import tech from "./images/tech-category.svg";
-import nontech from "./images/non-tech.svg";
+import tech from "./images/tech.png";
+import nontech from "./images/non-tech.png";
 
 import element from "./images/element.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -159,7 +159,7 @@ const HomeExploreProject = () => {
             marginLeft: "-420px",
             fontFamily: "cursive",
             color: "brown",
-            marginTop: "40px",
+            marginTop: "45px",
             marginBottom: "10px",
           }}
         >

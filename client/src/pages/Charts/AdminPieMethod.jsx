@@ -40,7 +40,7 @@ const AdminPieMethod = () => {
   }));
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-orange-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
+    <div className="m-4 md:m-10 mt-24 p-10 bg-blue-50 dark:bg-secondary-dark-bg rounded-3xl fixed">
       <ChartsHeader  title="Project Method Distribution" />
       <div style={{width:'850px',marginLeft:'120px'}}>
         <PieChart id="chart-pie" data={formattedPieChartData} legendVisiblity height="350" />

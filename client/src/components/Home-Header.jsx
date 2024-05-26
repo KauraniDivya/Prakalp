@@ -2,10 +2,10 @@ import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from '../App';
 import logo from "./images/79.png";
 import { Link, useNavigate } from "react-router-dom";
-import unite from "./images/unitenew.svg";
+import prakalp from "./images/prakalp.svg";
 import p1 from "./images/60111.png";
 import logo2 from "./images/jharkhand.png";
-import navbarlogo from "./images/Sankalp.svg";
+import navbarlogo from "./images/navbarlogo.png";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { styled } from "@mui/material/styles";
@@ -49,16 +49,16 @@ const HomeHeader = () => {
         <nav>
           <div className={`header-part1 ${hideHeaderPart1 ? "hidden" : ""}`}>
             <div className="logo-and-text">
-              <img src={logo} alt="logo" style={{ marginLeft:"30px"}}/>
+              <img src={logo} alt="logo" style={{ marginLeft:"30px", width:"119px"}}/>
               <h4>
-              <img src={unite} style={{width:"500px", marginLeft:"300px"}}/>
+              <img src={prakalp} style={{width:"230px", marginLeft:"435px"}}/>
               </h4>
 
 
               <img
                 src={logo2}
                 alt="logo"
-                style={{ width: "80px", height: "80px", marginLeft: "350px" }}
+                style={{ width: "70px", height: "70px", marginLeft: "494px" }}
               />
 
 
@@ -75,10 +75,10 @@ const HomeHeader = () => {
                     src={navbarlogo}
                     alt="logo"
                     style={{
-                      width: "40px",
-                      height: "40px",
-                      marginTop: "-8px",
-                      marginBottom: "17px ",
+                      width: "60px",
+                      height: "60px",
+                      marginTop: "-15px",
+                      marginBottom: "0px ",
                     }}
                   /></Link>
                 </li>

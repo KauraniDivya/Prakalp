@@ -143,7 +143,7 @@ const HomeProjectJourney = () => {
          </div>
        </div>
      </section>
-      <div style={{display:"flex"}}>
+      {/* <div style={{display:"flex"}}>
       <img
     src={a2}
     style={{
@@ -164,7 +164,7 @@ const HomeProjectJourney = () => {
       marginBottom: "-10px",
     }}
   />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -36,14 +36,14 @@ const Pyramid = () => {
   }, [state?.usertype, state?._id]);
 
   return (
-    <div className="m-4 md:m-10 mt-24  p-10 bg-orange-50 dark:bg-secondary-dark-bg rounded-3xl">
+    <div className="m-4 md:m-10 mt-24  p-10 bg-blue-50 dark:bg-secondary-dark-bg rounded-3xl">
       <ChartsHeader category="Pyramid" title="Trending Domains" />
       <div className="w-full">
         <AccumulationChartComponent
           id="pyramid-chart"
-          legendSettings={{ background: '#fff7ed' }}
+          legendSettings={{ background: '#f2edff' }}
           tooltip={{ enable: true }}
-          background={currentMode === 'Dark' ? '#33373E' : '#fff7ed'}
+          background={currentMode === 'Dark' ? '#33373E' : '#f2edff'}
         >
           <Inject services={[AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationLegend, AccumulationSelection]} />
           <AccumulationSeriesCollectionDirective>

@@ -143,7 +143,7 @@ const AuthSignup = () => {
               value={name}
               onChange={handleNameChange}
               required
-              style={{backgroundColor:"#fff8ed"}}
+              style={{backgroundColor:"aliceblue"}}
             />
                       </div>
                       <div className="field">
@@ -153,7 +153,7 @@ const AuthSignup = () => {
               value={email}
               onChange={handleEmailChange}
               required
-              style={{backgroundColor:"#fff8ed"}}
+              style={{backgroundColor:"aliceblue"}}
             />
                       </div>
                       <div className="field">
@@ -323,9 +323,9 @@ const AuthSignup = () => {
 </div>
 
                       </div>
-                      <div className="pass-link">
+                      {/* <div className="pass-link">
                         <a href="/forgot">Forgot password?</a>
-                      </div>
+                      </div> */}
                       <div className="field btn">
                         <div className="btn-layer"></div>
                         <button
@@ -337,7 +337,7 @@ const AuthSignup = () => {
       textAlign: "center",
       marginLeft: "0rem",
       background:
-        "linear-gradient(45deg, #FFA07A, #FF6347)",
+        "linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)",
       marginTop: "0px",
       paddingTop: "5px",
       paddingBottom:"5px",
@@ -370,7 +370,7 @@ const AuthSignup = () => {
           <img src={abcd} loading="lazy" alt="" style={{width:"300px"}}/>
           </div>
           <div class="slide-content">
-          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"maroon"}}>Welcome to Sankalp!</h2>
+          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"rgb(2 0 73)"}}>Welcome to Sankalp!</h2>
    <p style={{fontFamily:"Montserrat", fontSize:"18px", fontWeight:"500"}}>Unlock a world of possibilities and turn your ideas into reality.</p>
           </div>
         </div>
@@ -379,7 +379,7 @@ const AuthSignup = () => {
             <img src={loginimage1} loading="lazy" alt="" />
           </div>
           <div class="slide-content">
-          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"maroon"}}>Collaborate and Innovate Together</h2>
+          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"rgb(2 0 73)"}}>Collaborate and Innovate Together</h2>
         <p style={{fontFamily:"Montserrat", fontSize:"18px", fontWeight:"500"}}>Find exciting collaboration opportunities to contribute your skills and expertise to ongoing projects.</p>
           </div>
         </div>
@@ -388,7 +388,7 @@ const AuthSignup = () => {
             <img src={techn} loading="lazy" alt="" />
           </div>
           <div class="slide-content">
-          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"maroon"}}>Revolutionizing Technology and Inspiring Creativity</h2>
+          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"rgb(2 0 73)"}}>Revolutionizing Technology and Inspiring Creativity</h2>
         <p style={{fontFamily:"Montserrat", fontSize:"18px", fontWeight:"500"}}>Explore innovative tech projects that push the boundaries of what's possible in the digital world. Discover impactful non-tech projects that showcase creativity, collaboration, and diverse skills.</p>
           </div>
         </div>

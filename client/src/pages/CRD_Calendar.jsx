@@ -22,11 +22,11 @@ const Scheduler = () => {
   };
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-orange-50 rounded-3xl">
+    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-blue-50 rounded-3xl">
       <Header category="App" title="Calendar" />
       <PropertyPane>
         <table
-          style={{ width: '100%', background: '#fff7ed' }}
+          style={{ width: '100%', background: '#f2edff' }}
         >
           <tbody>
             <tr style={{ height: '50px' }}>

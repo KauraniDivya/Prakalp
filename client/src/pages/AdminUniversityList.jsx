@@ -33,7 +33,7 @@ const AdminUniversityList = () => {
   }, [state?.usertype, state?._id]);
 
   return (
-    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-orange-50 rounded-3xl fixed" style={{textAlign:'left',width:'1050px'}} >
+    <div className="m-4 md:m-10 mt-24 p-4 md:p-10 bg-blue-50 rounded-3xl fixed" style={{textAlign:'left',width:'1050px'}} >
   <Header category="Members" title={state?.usertype === 'university' ? 'Mentor' : 'University'} />
   <GridComponent
     id="gridcomp"

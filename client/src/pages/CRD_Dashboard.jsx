@@ -93,7 +93,7 @@ const CRD_Dashboard = () => {
     <div>
   {/* CRD Dashboard (Top) */}
  
-  <h2 className="text-4xl font-bold text-center mb-6">Project Id: #0001 || Project Name: Sankalp</h2>
+  <h2 className="text-4xl font-bold text-center mb-6">Project Id: #0001 || Project Name: Prakalp</h2>
   {/* Coollaborating University (Above the Boxes) */}
   <h2 className="text-2xl font-bold text-center mb-6">Collaborating University</h2>
 

@@ -156,7 +156,7 @@ const HomeViewCollege = () => {
   className="btn"
   id="collabButton"
   style={{
-    background: 'linear-gradient(45deg, #FFA07A, #FF6347)',
+    background: 'linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)',
     marginLeft: '-50px',
     height: '60px',
     marginTop: '50px',
@@ -210,7 +210,7 @@ const HomeViewCollege = () => {
               style={{
                 cursor: "pointer",
                 backgroundColor:
-                  activeTab2 === "projects" ? "orangered" : "transparent",
+                  activeTab2 === "projects" ? "rgb(2 0 73)" : "transparent",
                 color: activeTab2 === "projects" ? "#fff" : "#000",
                 padding: "8px",
                 borderRadius: "4px",
@@ -242,7 +242,7 @@ const HomeViewCollege = () => {
         position: "relative",
         borderRadius: "1rem",
         overflow: "hidden",
-        border: "5px solid #b3938054",
+        border: "5px solid #8097b354",
         boxShadow: "16px 16px 45px -15px rgba(0, 0, 0, 0.54)",
     }}>
       <div className="row ">

@@ -309,7 +309,7 @@ console.log("Modal content" + modalContent)
                   style={{ width: '80%',
                   padding: '9px',
                   marginLeft: '135px',
-                  backgroundColor: '#fff8ed',
+                  backgroundColor: 'aliceblue',
                   marginBottom: '10px',
                   boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19)',
                   borderRadius: '5px',
@@ -450,7 +450,7 @@ console.log("Modal content" + modalContent)
                   style={{ width: '80%',
                   padding: '9px',
                   marginLeft: '135px',
-                  backgroundColor: '#fff8ed',
+                  backgroundColor: 'aliceblue',
                   marginBottom: '10px',
                   boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19)',
                   borderRadius: '5px',
@@ -474,7 +474,7 @@ console.log("Modal content" + modalContent)
                   style={{ width: '80%',
                   padding: '9px',
                   marginLeft: '135px',
-                  backgroundColor: '#fff8ed',
+                  backgroundColor: 'aliceblue',
                   marginBottom: '10px',
                   boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19)',
                   borderRadius: '5px',
@@ -677,7 +677,7 @@ console.log("Modal content" + modalContent)
             style={{ width: '80%',
                   padding: '9px',
                   marginLeft: '35px',
-                  backgroundColor: '#fff8ed',
+                  backgroundColor: 'aliceblue',
                   marginBottom: '10px',
                   boxShadow: '0 4px 8px 0 rgba(169, 152, 130, 0.2), 0 6px 20px 0 rgba(122, 115, 89, 0.19)',
                   borderRadius: '5px',
@@ -749,7 +749,7 @@ console.log("Modal content" + modalContent)
             }}
           >
             <div>
-              <h2 style={{fontFamily:"Montserrat", fontSize:"20px", color:"maroon", fontWeight:"600"}}>Plagiarism Report</h2>
+              <h2 style={{fontFamily:"Montserrat", fontSize:"20px", color:"rgb(2 0 73)", fontWeight:"600"}}>Plagiarism Report</h2>
               <p style={{fontFamily:"Montserrat", fontSize:"18px", fontWeight:"500"}}>{modalContent}</p>
               <button onClick={() => setIsModalOpen(false)} style={{color:"red", fontWeight:"500"}}>Close</button>
             </div>
