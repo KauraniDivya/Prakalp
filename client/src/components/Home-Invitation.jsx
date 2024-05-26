@@ -204,7 +204,7 @@ const HomeInvitation = () => {
             onClick={handleAddTeamMember}
             disabled={!selectedTeamMember}
             style={{
-              background:"linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)"
+              background:"linear-gradient(45deg, #3c2fff, #24a6dd)"
             }}
           >
             Add

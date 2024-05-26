@@ -136,7 +136,7 @@ const AuthOtp = () => {
                           style={{
                             textAlign: 'center',
     marginLeft: '0rem',
-    background: 'linear-gradient(45deg, rgb(255, 160, 122), rgb(255, 99, 71))',
+    background: 'linear-gradient(45deg, #3c2fff, #24a6dd)',
     marginTop: '-7px',
     paddingTop: '3px',
     fontFamily: 'Montserrat',

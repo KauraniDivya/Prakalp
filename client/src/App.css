@@ -925,7 +925,7 @@ input.button.hover,
 button.hover {
   top: -3px;
   transform: translate(0px, 0px);
-  background: linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   ;
   color: aliceblue;
 }
@@ -1707,7 +1707,7 @@ a:focus {
 .categories {
   padding-top: 20px;
   color: white;
-  background: linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%);
+  background: linear-gradient(45deg, #3c2fff, #24a6dd);
   /* background-color: rgba(2, 28, 67, 0.616); */
   backdrop-filter: blur(12px);
   position: relative;

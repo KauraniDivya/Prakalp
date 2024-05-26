@@ -145,7 +145,7 @@ const UserDashboard = () => {
   {/* ... (Remaining code remains unchanged) */}
 </div>
 
- <h3 className="topPicks" style={{  color: 'rgb(190, 51, 0)',
+ <h3 className="topPicks" style={{  color: 'rgb(2, 0, 73)',
     textAlign: 'center',
     width:"400px",
     fontWeight: 500,
@@ -154,9 +154,10 @@ const UserDashboard = () => {
     marginLeft: '500px',
     marginBottom: '2rem',
     marginTop: '1rem',
-    border: '1rem solid rgb(255, 212, 186)',
+    border: '1rem solid #c4c8f8',
     borderRadius: '2rem',
     backdropFilter: 'blur(16px)',
+    boxShadow:" inset 3px 2px rgb(151 145 179)",
     background: 'rgba(203, 190, 183, 0.14)', }}>Projects</h3>
       <hr style={{ border: '1px solid #ccc', margin: '0 auto', width: '50%' }} />
  <section

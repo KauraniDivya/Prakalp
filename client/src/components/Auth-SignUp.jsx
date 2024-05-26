@@ -337,7 +337,7 @@ const AuthSignup = () => {
       textAlign: "center",
       marginLeft: "0rem",
       background:
-        "linear-gradient(rgb(1 57 148) 0px, rgb(31 54 155) 100%)",
+        "linear-gradient(45deg, #3c2fff, #24a6dd)",
       marginTop: "0px",
       paddingTop: "5px",
       paddingBottom:"5px",
