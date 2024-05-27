@@ -11,7 +11,7 @@ import MuiGrid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
-import event from "./images/event.svg"
+import event from "./images/event.png"
 
 const buttonStyle = {
   position: 'fixed',
@@ -213,6 +213,7 @@ export default function TemporaryDrawer() {
                  position: 'relative',
                  zIndex: '-1',
                  transition: 'transform 0.3s ease', // Add transition for smooth scaling
+                 textAlign:"center",
                  ":hover": {
                    transform: 'scale(1.1) !important', // Scale the image on hover
                  },
@@ -228,13 +229,14 @@ export default function TemporaryDrawer() {
                boxSizing: 'border-box',
                backdropFilter:"blur(12px)",
                marginTop:"-50px",
-            
+               textAlign:"center"
              }}>
                 <span style={{
                  position: 'absolute',
                  // bottom: '0',
                  marginLeft:"-150px",
-                
+                fontWeight:"bold",
+                textAlign:"center",
                }} className="card-title">Updated: {formatTimestamp(event.timestamp)}</span>
                <h2 style={{marginTop:"40px"}}>{event?.name} </h2>
                <p style={{
@@ -249,7 +251,8 @@ export default function TemporaryDrawer() {
              }}>
  
             <Link to={event?.link}>  <a style={{
-                 color: '#ffab40',
+                 color: 'blue',
+                 fontWeight: '600',
                  marginRight: '16px',
                  transition: 'color 0.3s ease',
                  textTransform: 'uppercase',

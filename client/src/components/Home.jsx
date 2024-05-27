@@ -10,6 +10,15 @@ import HomeProjectCategory from "./Home-ProjectCategories.jsx";
 import HomeProjectJourney from "./Home-ProjectJourney.jsx";
 // import HomeFooter from "./Home-Footer.jsx";
 import HomeExploreProject from "./Home-ExploreProjects";
+import event from "./images/event.png"
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination, EffectCoverflow } from "swiper/modules";
 
 const Home = () => {
   // useEffect(() => {
@@ -162,51 +171,53 @@ const Home = () => {
           height: "100px", // Set the height as needed
         }}
       ></div>
-      <section
-        className="background"
-        style={{
-          backgroundImage: `url(${bgimage})`,
-          marginTop: "27px",
-          height: "425px",
-        }}
-      >
-        <form className="search_bar small" style={{ marginTop: "108px",zIndex:"99" }}>
-        <div className="search-container search-bar">
-      <Autosuggest
-        suggestions={suggestionsList}
-        onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={onSuggestionsClearRequested}
-        getSuggestionValue={(suggestion) => suggestion.name}
-        renderSuggestion={renderSuggestion}
-        onSuggestionSelected={onSuggestionSelected}
-        inputProps={inputProps}
-        renderSuggestionsContainer={renderSuggestionsContainer}
-      />
-    </div>
-          <div className="counter">
-      <div className="counter-container">
-        <div className="row">
-          <div className="col-12 col-lg-3">
-            <div className="count-up">
-              <p className="counter-count">{totalVisits}</p>
-            </div>
-            <div className="count-down">
-              <h3>Visiters</h3>
-            </div>
-          </div>
-          <div className="col-12 col-lg-3">
-            <div className="count-up">
-              <p className="counter-count">{totalProjects}</p>
-            </div>
-            <div className="count-down">
-              <h3>Projects Uploaded</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        </form>
-      </section>
+      <div>
+<div className="container flex flex-col items-center justify-center gap-14 w-[100%] h-[30rem] mt-28" style={{marginTop:"0rem"}}>
+                    <Swiper
+                        effect={"coverflow"}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={"auto"}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            // depth: 100,
+                            // modifier: 1,
+                        }}
+                        modules={[EffectCoverflow, Pagination]}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        className="mySwiper landingPageSwiper w-full overflow-hidden md:h-[500px] h-auto  flex md:flex-row flex-col items-center justify-center rounded-xl"
+                    >
+                            return (
+                              <>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                <SwiperSlide  className="w-full h-full">
+                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
+                                </SwiperSlide>
+                                </>
+                            );
+                    </Swiper>
+
+                   
+                             
+                            </div>
+                            </div>
       <br />
       <br />
       <HomeTrendProject />
