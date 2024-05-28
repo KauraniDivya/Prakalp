@@ -43,7 +43,7 @@ const HomeViewCollege = () => {
   
     const fetchUniversityDetails = async () => {
       try {
-        const response = await fetch(`https://api-sankalp.vercel.app/university/${universityId}`);
+        const response = await fetch(`/university/${universityId}`);
         const data = await response.json();
         setUniversityDetails(data);
       } catch (error) {
@@ -53,7 +53,7 @@ const HomeViewCollege = () => {
   
     const fetchUserProjects = async () => {
       try {
-        const response = await fetch(`https://api-sankalp.vercel.app/uniprojects/${universityId}`);
+        const response = await fetch(`/uniprojects/${universityId}`);
         const data = await response.json();
         setUserProjects(data);
       } catch (error) {
@@ -322,7 +322,7 @@ const HomeViewCollege = () => {
 
            {activeTab2 === "projects" && (
             <>
-               <h3 className="topPicks" style={{  color: 'rgb(190, 51, 0)',
+               <h3 className="topPicks" style={{  color: 'rgb(2, 0, 73)',
     textAlign: 'center',
     width:"400px",
     fontWeight: 500,
@@ -330,11 +330,12 @@ const HomeViewCollege = () => {
     fontSize: '40px',
     marginLeft: '500px',
     marginBottom: '2rem',
-    marginTop: '-1rem',
-    border: '1rem solid rgb(255, 212, 186)',
+    marginTop: '1rem',
+    border: '1rem solid #c4c8f8',
     borderRadius: '2rem',
     backdropFilter: 'blur(16px)',
-    background: 'rgba(203, 190, 183, 0.14)', }}>Projects</h3>
+    boxShadow:" inset 3px 2px rgb(151 145 179)",
+    background: 'rgba(203, 190, 183, 0.14)', }} >Projects</h3>
       <hr style={{ border: '1px solid #ccc', margin: '0 auto', width: '50%' }} />
  <section
             className="results-section results--grid"
@@ -410,7 +411,7 @@ const HomeViewCollege = () => {
           )}
         </div>
       
-                  <HomeFooter />
+             
   </>
   );
 };

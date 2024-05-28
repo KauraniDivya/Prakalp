@@ -71,7 +71,7 @@ const AuthSignup = () => {
     };
   
     try {
-      const response = await fetch("https://api-sankalp.vercel.app/signup", {
+      const response = await fetch("/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -370,7 +370,7 @@ const AuthSignup = () => {
           <img src={abcd} loading="lazy" alt="" style={{width:"300px"}}/>
           </div>
           <div class="slide-content">
-          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"rgb(2 0 73)"}}>Welcome to Sankalp!</h2>
+          <h2 style={{fontFamily:"Montserrat", fontSize:"20px", fontWeight:"600", color:"rgb(2 0 73)"}}>Welcome to Prakalp!</h2>
    <p style={{fontFamily:"Montserrat", fontSize:"18px", fontWeight:"500"}}>Unlock a world of possibilities and turn your ideas into reality.</p>
           </div>
         </div>

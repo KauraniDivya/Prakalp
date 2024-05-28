@@ -7,7 +7,7 @@ const { MONGOURI } = require('./config/keys')
 
 app.use(cors (
   {
-     origin: ["https://unite-bharat.vercel.app"],
+     origin: ["http://localhost:3000"],
      methods: ["GET", "POST", "PUT", "DELETE"],
      credentials: true
 
@@ -43,7 +43,7 @@ app.use(require("./routes/profile"));
 app.use(require("./routes/contributor"));
 
 app.get("/", (req,res)=>{
-  res.json("Welcome to UNITE-BHARAT")
+  res.json("Welcome to PRAKALP")
 })
 app.listen(PORT, () => {
   console.log("Server is running on:", PORT);

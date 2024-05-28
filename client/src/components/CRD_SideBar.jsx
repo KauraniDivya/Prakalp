@@ -19,6 +19,7 @@ import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { GiLouvrePyramid } from "react-icons/gi";
 import { useStateContext } from "../contexts/ContextProvider";
+import logo from "./images/navbarlogo.png"
 
 const CRD_SideBar = () => {
 
@@ -130,7 +131,7 @@ const CRD_SideBar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Sankalp</span>
+                   <img src={logo} alt="Basic Info" style={{ width: '50px', height: '50px' }} /> <span className='text-2xl font-medium'>Prakalp</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button

@@ -22,11 +22,11 @@ const Ecommerce = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        let statsEndpoint = "https://api-sankalp.vercel.app/total-stats";
+        let statsEndpoint = "/total-stats";
         let params = ""; // To store URL parameters
 
         if (state?.usertype === "university") {
-          statsEndpoint = `https://api-sankalp.vercel.app/university-stats?id=${state?._id}&university=${state?.university}`;
+          statsEndpoint = `/university-stats?id=${state?._id}&university=${state?.university}`;
         }
 
         const response = await fetch(statsEndpoint + params);

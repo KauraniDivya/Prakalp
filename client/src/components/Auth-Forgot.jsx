@@ -43,7 +43,7 @@ const AuthForgot = () => {
           return;
         }
     
-        fetch('https://api-sankalp.vercel.app/reset-password', {
+        fetch('/reset-password', {
           method: 'post',
           headers: {
             'Content-Type': 'application/json',

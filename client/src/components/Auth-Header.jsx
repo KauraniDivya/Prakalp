@@ -23,19 +23,15 @@ const AuthHeader = () => {
 
  
 
-<div className="header-part1">
+<div className="header-part1 ">
             <div className="logo-and-text">
-              <img src={logo} alt="logo" />
+            
               <h4>
-                <img src={prakalp} style={{width:"250px", marginLeft:"400px"}}/>
+                <img src={prakalp} style={{width:"250px", marginLeft:"500px"}}/>
               </h4>
     
 
-      <img
-        src={logo2}
-        alt="logo"
-        style={{ width: "80px", height: "80px", marginLeft:"350px" }}
-      />
+     
 
 
               

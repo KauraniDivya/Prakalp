@@ -110,7 +110,7 @@ const CRD_Chat = () => {
             className="h-full w-full"
           />
         </div>
-        <div className="text-sm font-semibold mt-2">Sankalp</div>
+        <div className="text-sm font-semibold mt-2">Prakalp</div>
         <div className="text-xs text-gray-500">Web Development</div>
         <div className="flex flex-row items-center mt-3">
           <div

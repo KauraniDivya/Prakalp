@@ -27,7 +27,7 @@ import Header from "./Home-Header";
 import HomeFooter from "./Home-Footer";
 import p1 from "./images/60111.png";
 import logo2 from "./images/jharkhand.png";
-import navbarlogo from "./images/Sankalp.svg";
+import navbarlogo from "./images/navbarlogo.png";
 
 const HomeViewProject = () => {
   const { state } = useContext(UserContext);
@@ -90,7 +90,7 @@ const HomeViewProject = () => {
     const fetchProjectDetails = async () => {
 
       try {
-        const response = await fetch(`https://api-sankalp.vercel.app/projects/${projectId}`);
+        const response = await fetch(`/projects/${projectId}`);
         const data = await response.json();
         setProjectDetails(data);
         setGooglequery(data?.projectTitle);
@@ -122,7 +122,7 @@ const HomeViewProject = () => {
 
       setLoading(true);
 
-      const response = await fetch("https://api-sankalp.vercel.app/google-search", {
+      const response = await fetch("/google-search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -150,7 +150,7 @@ const HomeViewProject = () => {
 
       setLoading(true);
 
-      const response = await fetch("https://api-sankalp.vercel.app/youtube-search", {
+      const response = await fetch("/youtube-search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -178,7 +178,7 @@ const HomeViewProject = () => {
 
       setLoading(true);
 
-      const response = await fetch("https://api-sankalp.vercel.app/google-scholar-search", {
+      const response = await fetch("/google-scholar-search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -202,7 +202,7 @@ const HomeViewProject = () => {
       // Optimistically update the local state
       setLiked((prevLiked) => !prevLiked);
 
-      const response = await fetch(`https://api-sankalp.vercel.app/like/${projectId}`, {
+      const response = await fetch(`/like/${projectId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -238,7 +238,7 @@ const HomeViewProject = () => {
       handleYouTubeSearch(searchedQuery);
       handleScholarSearch(searchedQuery);
       handleProjectSearch(searchedQuery);
-      const response = await fetch(`https://api-sankalp.vercel.app/view/${projectId}`, {
+      const response = await fetch(`/view/${projectId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -412,7 +412,7 @@ const HomeViewProject = () => {
       <header className={`header ${scrolling ? "scrolling" : ""}`}>
         <nav>
           
-          <div className={`navbar ${scrolling ? "sticky" : ""}`} style={{zIndex:"101", marginLeft:"-45px"}}>
+          <div className={`navbar w-full ${scrolling ? "sticky" : ""}`} style={{zIndex:"101", marginLeft:"-45px"}}>
             <div>
             <ul>
                 <li>              <Link to="/">
@@ -420,10 +420,11 @@ const HomeViewProject = () => {
                     src={navbarlogo}
                     alt="logo"
                     style={{
-                      width: "40px",
-                      height: "40px",
+                      width: "50px",
+                      height: "50px",
                       marginTop: "-8px",
                       marginBottom: "17px ",
+                      marginLeft:"20px"
                     }}
                   /></Link>
                 </li>

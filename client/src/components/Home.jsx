@@ -1,223 +1,74 @@
 import React, { useContext, useEffect, useState } from "react";
 import HomeHeader from "./Home-Header";
-import { useNavigate } from 'react-router-dom';
-import bgimage from "./images/dd.jpg";
-import Autosuggest from 'react-autosuggest';
+import { useNavigate } from "react-router-dom";
 import ribbon from "./images/ribbon.svg";
 import HomeTrendProject from "./Home-Trend.jsx";
-import Eventbar from "./Home-Eventbar.jsx"
+import Eventbar from "./Home-Eventbar.jsx";
 import HomeProjectCategory from "./Home-ProjectCategories.jsx";
 import HomeProjectJourney from "./Home-ProjectJourney.jsx";
 // import HomeFooter from "./Home-Footer.jsx";
 import HomeExploreProject from "./Home-ExploreProjects";
-import event from "./images/event.png"
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-// import required modules
-import { Pagination, EffectCoverflow } from "swiper/modules";
+import hero from "./images/hero.jpg"
 
 const Home = () => {
-  // useEffect(() => {
-  //   const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-  //   window.addEventListener("scroll", function () {
-  //     if (window.scrollY >= 100) {
-  //       backTopBtn.classList.add("active");
-  //     } else {
-  //       backTopBtn.classList.remove("active");
-  //     }
-  //   });
-  //   // Select all elements with class 'counter-count'
-  //   var counters = document.querySelectorAll(".counter-count");
-
-  //   counters.forEach(function (counter) {
-  //     var currentValue = 0; // Starting value
-  //     var targetValue = parseInt(counter.textContent, 10); // Target value
-
-  //     var duration = 4000; // Animation duration in milliseconds
-  //     var startTime = null;
-
-  //     function animateCounter(timestamp) {
-  //       if (!startTime) {
-  //         startTime = timestamp;
-  //       }
-
-  //       // Calculate time elapsed since the animation started
-  //       var elapsedTime = timestamp - startTime;
-
-  //       // Calculate the new value for the counter based on time elapsed
-  //       var newValue = Math.min(
-  //         Math.ceil((elapsedTime / duration) * targetValue),
-  //         targetValue
-  //       );
-
-  //       // Update the counter text content
-  //       counter.textContent = newValue;
-
-  //       // Continue the animation until the target value is reached
-  //       if (newValue < targetValue) {
-  //         requestAnimationFrame(animateCounter);
-  //       }
-  //     }
-
-  //     // Start the animation
-  //     requestAnimationFrame(animateCounter);
-  //   });
-  // }, []);
-
-  const [totalVisits, setTotalVisits] = useState(0);
-  const [totalProjects, setTotalProjects] = useState(0);
-  const navigate = useNavigate();
-  const [value, setValue] = useState('');
-  const [suggestionsList, setSuggestions] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://api-sankalp.vercel.app/home-stats');
-        const data = await response.json();
-
-        setTotalVisits(data.Students); // Assuming Students represent total visits
-        setTotalProjects(data.Projects);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const handleKeyDown = (event) => {
-    // Handle Enter key
-    if (event.key === 'Enter') {
-      // Redirect to the top suggestion (if available)
-      if (suggestionsList.length > 0) {
-        navigate(suggestionsList[0].route);
-      }
-    }
-  };
-  const suggestions = [
-    { name: 'Home', route: '/' },
-    { name: 'Project', route: '/projectlist' },
-    { name: 'Dashboard', route: '/dashboard' },
-    { name: 'Profile', route: '/dashboard' },
-    { name: 'Explore Projects', route: '/projectlist' },
-    { name: 'About', route: '/about' },
-    { name: 'Upload Project', route: '/uploadproject' },
-    // Add more suggestions as needed
-  ];
-
-  const getSuggestions = (inputValue) => {
-    const inputValueLowerCase = inputValue.toLowerCase();
-    return suggestions.filter(
-      (suggestion) => suggestion.name.toLowerCase().includes(inputValueLowerCase)
-    );
-  };
-
-  // Autosuggest will call this function every time you need to update suggestions.
-  const onSuggestionsFetchRequested = ({ value }) => {
-    setSuggestions(getSuggestions(value));
-  };
-
-  // Autosuggest will call this function every time you need to clear suggestions.
-  const onSuggestionsClearRequested = () => {
-    setSuggestions([]);
-  };
-
-  // Render suggestion
-  const renderSuggestion = (suggestion) => <div>{suggestion.name}</div>;
-  const renderSuggestionsContainer = ({ containerProps, children, query }) => {
-    return (
-      <div {...containerProps}>
-        <div className="suggestions-container">
-          {children}
-          {query && suggestionsList.length === 0 && (
-            <div className="no-suggestions">
-              No matching results found. Please refine your search.
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  };
-  // When suggestion is selected, this function will be called
-  const onSuggestionSelected = (event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) => {
-    // Use the navigate function to redirect to the selected suggestion's page
-    navigate(suggestion.route);
-
-    // Prevent the default behavior to avoid the suggestion being inserted into the input
-    event.preventDefault();
-  };
-  const onChange = (event, { newValue }) => {
-    setValue(newValue);
-  };
-  const inputProps = {
-    placeholder: '🔍 What do you want to explore today?',
-    value,
-    onChange: (_, { newValue }) => setValue(newValue),
-    onKeyDown: handleKeyDown,
-  };
-
   return (
     <>
       <HomeHeader />
       <Eventbar />
-      <div
-        style={{
-          width: "100px", // Set the width as needed
-          height: "100px", // Set the height as needed
-        }}
-      ></div>
-      <div>
-<div className="container flex flex-col items-center justify-center gap-14 w-[100%] h-[30rem] mt-28" style={{marginTop:"0rem"}}>
-                    <Swiper
-                        effect={"coverflow"}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={"auto"}
-                        coverflowEffect={{
-                            rotate: 50,
-                            stretch: 0,
-                            // depth: 100,
-                            // modifier: 1,
-                        }}
-                        modules={[EffectCoverflow, Pagination]}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        className="mySwiper landingPageSwiper w-full overflow-hidden md:h-[500px] h-auto  flex md:flex-row flex-col items-center justify-center rounded-xl"
-                    >
-                            return (
-                              <>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                <SwiperSlide  className="w-full h-full">
-                                    <img src={event} alt="img" className="w-full h-full object-cover object-center" />
-                                </SwiperSlide>
-                                </>
-                            );
-                    </Swiper>
-
-                   
-                             
-                            </div>
-                            </div>
+      <section class="hero-title bg-white dark:bg-gray-900 min-h-screen mt-40">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+            <span class="text-md bg-primary-600 rounded-full text-white px-3 py-1 mr-3 bg-blue-500 border-r-5">New</span> <span class="text-sm font-medium">PRAKALP is Live!🚀</span> 
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+        <p class="mb-4 text-[6.5rem] font-extrabold tracking-tight leading-none text-gray-900 dark:text-white">PRAKALP</p>
+        <p class="mb-8 text-xl font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Platform for Research, Knowledge, and Advanced Learning Projects - Driving excellence in education and research with advanced learning projects.</p>
+        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+           
+            <a href="#exploreproject" class="inline-flex justify-center items-center py-2 px-3 text-base font-medium text-center bg-blue-700 text-gray-100 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Explore more
+            </a>  
+        </div>
+       
+    </div>
+</section>
+{/* 
+      <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-6 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div class="mr-auto place-self-center lg:col-span-6">
+            <h1 class="max-w-[40rem] mb-4 text-5xl font-extrabold tracking-tight leading-none dark:text-white">
+            Platform for Research, Knowledge, and Advanced Learning Projects
+            </h1>
+            <p class="max-w-[35rem] mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Driving excellence in education and research with advanced learning projects.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            >
+              Get started
+              <svg
+                class="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="hidden lg:mt-5 lg:col-span-6 lg:flex">
+            <img
+              src={hero}
+              alt="mockup"
+            />
+          </div>
+        </div>
+      </section> */}
       <br />
       <br />
       <HomeTrendProject />
@@ -237,7 +88,7 @@ const Home = () => {
         src={ribbon}
         style={{
           width: "100%",
-          height:"50%",
+          height: "50%",
           marginTop: "-900px",
           opacity: "0.05",
           zIndex: "0",

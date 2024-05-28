@@ -5,7 +5,7 @@ import { UserContext } from "../App";
 import loginimage1 from "./images/login-first.webp";
 
 import loginuser from "./images/60111.png";
-import abcd from "./images/welcome.svg";
+import abcd from "./images/welcome.webp";
 import Swiper from "swiper";
 import "swiper/css";
 import { toast } from "react-toastify";
@@ -60,7 +60,7 @@ const AuthLogin = () => {
     };
     console.log(payload);
     // Make an API call to your server for user login
-    fetch("https://api-sankalp.vercel.app/signin", {
+    fetch("/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

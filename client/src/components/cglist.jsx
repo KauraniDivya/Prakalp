@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "./images/dd.jpg";
+import logo from "./images/navbarlogo.png";
 import HomeHeader from "./Home-Header";
 
 const CgList = () => {
@@ -12,7 +12,7 @@ const CgList = () => {
     // Fetch university users when the component mounts
     const fetchUniversityUsers = async () => {
       try {
-        const response = await fetch("https://api-sankalp.vercel.app/university-users");
+        const response = await fetch("/university-users");
         const data = await response.json();
         setUniversityUsers(data);
       } catch (error) {

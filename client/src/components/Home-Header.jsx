@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { UserContext } from '../App';
+import React, { useState, useEffect, useContext } from "react";
+import { UserContext } from "../App";
 import logo from "./images/79.png";
 import { Link, useNavigate } from "react-router-dom";
 import prakalp from "./images/prakalp.svg";
@@ -15,8 +15,6 @@ import { styled } from "@mui/material/styles";
 const HomeHeader = () => {
   const { state, dispatch } = useContext(UserContext);
   const navigate = useNavigate();
-
-
 
   const [scrolling, setScrolling] = useState(false);
   const [hideHeaderPart1, setHideHeaderPart1] = useState(false);
@@ -47,40 +45,32 @@ const HomeHeader = () => {
     <>
       <header className={`header ${scrolling ? "scrolling" : ""}`}>
         <nav>
-          <div className={`header-part1 ${hideHeaderPart1 ? "hidden" : ""}`}>
-            <div className="logo-and-text">
-              <img src={logo} alt="logo" style={{ marginLeft:"30px", width:"119px"}}/>
-              <h4>
-              <img src={prakalp} style={{width:"230px", marginLeft:"435px"}}/>
-              </h4>
-
-
-              <img
-                src={logo2}
-                alt="logo"
-                style={{ width: "70px", height: "70px", marginLeft: "494px" }}
-              />
-
-
-
-
-
+          <div
+            className={`header-part1 h-20 m-0 p-0 ${
+              hideHeaderPart1 ? "hidden" : ""
+            }`}
+          >
+            <div className="flex justify-center items-center m-0 p-0">
+              <img src={prakalp} width="250" />
             </div>
           </div>
           <div className={`navbar ${scrolling ? "sticky" : ""}`}>
             <div>
               <ul>
-                <li>              <Link to="/">
-                  <img
-                    src={navbarlogo}
-                    alt="logo"
-                    style={{
-                      width: "60px",
-                      height: "60px",
-                      marginTop: "-15px",
-                      marginBottom: "0px ",
-                    }}
-                  /></Link>
+                <li>
+                  {" "}
+                  <Link to="/">
+                    <img
+                      src={navbarlogo}
+                      alt="logo"
+                      style={{
+                        width: "60px",
+                        height: "60px",
+                        marginTop: "-15px",
+                        marginBottom: "0px ",
+                      }}
+                    />
+                  </Link>
                 </li>
                 <div className="navHome">
                   <li>
@@ -91,7 +81,7 @@ const HomeHeader = () => {
                       </a>{" "}
                     </Link>
                   </li>
-            
+
                   <li>
                     <Link to="/projectlist">
                       {" "}
@@ -117,7 +107,8 @@ const HomeHeader = () => {
                     </Link>
                   </li>
                   <li>
-                    {state?.usertype === "admin" || state?.usertype === "university" ? (
+                    {state?.usertype === "admin" ||
+                    state?.usertype === "university" ? (
                       <Link to="/admin/dashboard">
                         <a className="aHome">
                           Dashboard<i className="fas fa-home"></i>
@@ -159,12 +150,15 @@ const HomeHeader = () => {
                   <li>
                     <Link to="/login">
                       {" "}
-                      <a className="aHome" onClick={() => {
-                        localStorage.clear();
-                        dispatch({ type: "CLEAR" });
-                        toast.success("Logout Successfully!!");
-                        navigate("/login");
-                      }} >
+                      <a
+                        className="aHome"
+                        onClick={() => {
+                          localStorage.clear();
+                          dispatch({ type: "CLEAR" });
+                          toast.success("Logout Successfully!!");
+                          navigate("/login");
+                        }}
+                      >
                         Logout<i className="fas fa-home"></i>
                       </a>{" "}
                     </Link>

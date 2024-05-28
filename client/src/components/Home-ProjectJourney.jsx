@@ -2,8 +2,6 @@ import React from "react";
 import idea from "./images/idea.png"
 import discuss from "./images/discuss.png"
 import team from "./images/team.png"
-import a1 from "./images/1.svg";
-import a2 from "./images/2.svg";
 const HomeProjectJourney = () => {
  
   return (

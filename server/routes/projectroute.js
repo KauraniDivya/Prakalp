@@ -8,7 +8,13 @@ const { exec } = require('child_process');
 const nodemailer = require("nodemailer");
 const crypto = require("crypto");
 const { getJson } = require("serpapi");
-const {EMAIL,GPASS} = require('../config/keys')
+const {
+  GPASS,
+  GOOGLE_SCHOLAR_API_KEY,
+  YOUTUBE_API_KEY,
+  GOOGLE_API_KEY,
+  SERP_API_KEY
+} = require("../config/keys");
 const Twitter = require('twitter');
 const cheerio = require('cheerio')
 function removeSpecialCharacters(text) {
@@ -871,7 +877,7 @@ router.post('/google-search', async (req, res) => {
     console.log("google called")
     const { projectTitle } = req.body;
 
-    const apiKey = 'AIzaSyDBgQASzck6T2npwrHcfoLUFh-CSnbFp10';
+    const apiKey = GOOGLE_API_KEY;
     const cx = '850953fc1ee574de6';
 
     const apiUrl = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${projectTitle}`;
@@ -898,7 +904,7 @@ router.post('/youtube-search', async (req, res) => {
     console.log("YouTube Search API called");
     const { projectTitle } = req.body;
 
-    const youtubeApiKey = 'AIzaSyCdeQS71SGmaB8U4Fu6nenkCOi6YIZ2jAY'; // Replace with your YouTube API key
+    const youtubeApiKey = YOUTUBE_API_KEY; // Replace with your YouTube API key
     const youtubeApiUrl = `https://www.googleapis.com/youtube/v3/search?key=${youtubeApiKey}&q=${projectTitle}&part=snippet&type=video`;
     const youtubeResponse = await axios.get(youtubeApiUrl);
     const youtubeResults = youtubeResponse.data.items.slice(0, 3).map((item) => ({
@@ -920,7 +926,7 @@ router.post('/google-scholar-search', async (req, res) => {
     console.log('Google Scholar Search API called');
     const { projectTitle } = req.body;
 
-    const apiKey = 'eb7c652b20dee39b69b044a5a21db61e3dbddd49f93eddea0e84e991b0ec614d'; // Replace with your SerpAPI API key
+    const apiKey = GOOGLE_SCHOLAR_API_KEY; // Replace with your SerpAPI API key
     const serpapiParams = {
       engine: 'google_scholar',
       q: projectTitle,
